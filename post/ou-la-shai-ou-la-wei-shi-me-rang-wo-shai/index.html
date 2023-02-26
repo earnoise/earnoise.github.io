@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Yile&#39;sBLog</title>
+<title>欧拉筛(欧拉：为什么让我筛🤔 | Yile&#39;sBLog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,14 @@
 
 
 
-    <meta name="description" content="一乐的博客">
+    <meta name="description" content="先上代码：
+const int N=1e5+10;
+int vis[N];    //0表示素数，1表示非素数
+int prime[N];    //只在这个函数有作用
+void Euler_prime()  //欧拉筛法
+{
+    fo..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,10 +95,50 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">欧拉筛(欧拉：为什么让我筛🤔</h2>
+            <div class="post-date">2023-02-27</div>
             
+            <div class="post-content" v-pre>
+              <p>先上代码：</p>
+<pre><code class="language-cpp">const int N=1e5+10;
+int vis[N];    //0表示素数，1表示非素数
+int prime[N];    //只在这个函数有作用
+void Euler_prime()  //欧拉筛法
+{
+    for(int i=2;i&lt;=N;i++)
+    {
+        if(!vis[i]) prime[x++]=i;
+        for(int j=0;j&lt;x;j++)
+        {
+            if(i*prime[j]&gt;N) break;
+            vis[i*prime[j]]=1;
+            if(i%prime[j]==0) break;
+        }
+    }
+}
+</code></pre>
+<p>思路：<br>
+为了实现让合数分解为——最小质因数 * 剩下的形式，我们将内层循环换为从最小的素数遍历到最大的素数，并且新增一条break语句，使得每次都以prime[j] * i的方式筛掉合数，如此就可以使得prime[j]为该合数的最小质因数。证明如下，改内层循环：prime是从最小遍历到最大的，且i使外层循环，总是大于prime的数字，所以prime[j] &lt; i。加break语句：如果i =k * prime[j]，那么i * prime[j + 1] = prime[j] * k * prime[j + 1]显然此时prime[j + 1]不是该合数i * prime[j + 1]中的最小质因数，那么就说明该合数已经(之后)会被prime[j] 或者k中的最小质因数筛掉。即避免了重复筛选。</p>
+<p>摆烂吧～</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://blog-yile.github.io/post/shi-me-~shi-kuai-le-dfs~/">
+                  <h3 class="post-title">
+                    什么～是快乐dfs～
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
       </div>
     </div>

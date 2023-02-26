@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog-yile.github.io</id>
     <title>Yile&apos;sBLog</title>
-    <updated>2023-02-26T02:44:06.444Z</updated>
+    <updated>2023-02-26T02:51:56.160Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog-yile.github.io"/>
     <link rel="self" href="https://blog-yile.github.io/atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://blog-yile.github.io/images/avatar.png</logo>
     <icon>https://blog-yile.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Yile&apos;sBLog</rights>
+    <entry>
+        <title type="html"><![CDATA[欧拉筛(欧拉：为什么让我筛🤔]]></title>
+        <id>https://blog-yile.github.io/post/ou-la-shai-ou-la-wei-shi-me-rang-wo-shai/</id>
+        <link href="https://blog-yile.github.io/post/ou-la-shai-ou-la-wei-shi-me-rang-wo-shai/">
+        </link>
+        <updated>2023-02-27T02:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>先上代码：</p>
+<pre><code class="language-cpp">const int N=1e5+10;
+int vis[N];    //0表示素数，1表示非素数
+int prime[N];    //只在这个函数有作用
+void Euler_prime()  //欧拉筛法
+{
+    for(int i=2;i&lt;=N;i++)
+    {
+        if(!vis[i]) prime[x++]=i;
+        for(int j=0;j&lt;x;j++)
+        {
+            if(i*prime[j]&gt;N) break;
+            vis[i*prime[j]]=1;
+            if(i%prime[j]==0) break;
+        }
+    }
+}
+</code></pre>
+<p>思路：<br>
+为了实现让合数分解为——最小质因数 * 剩下的形式，我们将内层循环换为从最小的素数遍历到最大的素数，并且新增一条break语句，使得每次都以prime[j] * i的方式筛掉合数，如此就可以使得prime[j]为该合数的最小质因数。证明如下，改内层循环：prime是从最小遍历到最大的，且i使外层循环，总是大于prime的数字，所以prime[j] &lt; i。加break语句：如果i =k * prime[j]，那么i * prime[j + 1] = prime[j] * k * prime[j + 1]显然此时prime[j + 1]不是该合数i * prime[j + 1]中的最小质因数，那么就说明该合数已经(之后)会被prime[j] 或者k中的最小质因数筛掉。即避免了重复筛选。</p>
+<p>摆烂吧～</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[什么～是快乐dfs～]]></title>
         <id>https://blog-yile.github.io/post/shi-me-~shi-kuai-le-dfs~/</id>
