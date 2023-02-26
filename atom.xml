@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog-yile.github.io</id>
+    <title>Gridea</title>
+    <updated>2023-02-26T02:16:18.145Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog-yile.github.io"/>
+    <link rel="self" href="https://blog-yile.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://blog-yile.github.io/images/avatar.png</logo>
+    <icon>https://blog-yile.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[关于……]]></title>
+        <id>https://blog-yile.github.io/post/guan-yu/</id>
+        <link href="https://blog-yile.github.io/post/guan-yu/">
+        </link>
+        <updated>2023-02-26T02:13:18.000Z</updated>
+        <content type="html"><![CDATA[<p>你好！访问者！欢迎来到我的站点！<br>
+我是一个学生，平时喜欢捣鼓信息学的东西<br>
+这是我的博客，之后欢迎来玩！</p>
+<p>我的邮箱：749199580@qq.com<br>
+反馈邮箱：Mayile163Mail@163.com</p>
+<p>拜拜(o^^o)😁</p>
+]]></content>
+    </entry>
+</feed>
