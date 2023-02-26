@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog-yile.github.io</id>
     <title>Yile&apos;sBLog</title>
-    <updated>2023-02-26T02:36:16.753Z</updated>
+    <updated>2023-02-26T02:40:50.419Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog-yile.github.io"/>
     <link rel="self" href="https://blog-yile.github.io/atom.xml"/>
@@ -72,20 +72,6 @@ int main(){
 <p>想必int main()不用说了吧？<br>
 如果康不懂，建议重读呢亲亲。</p>
 <p>byebye，摸鱼去啦。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于……]]></title>
-        <id>https://blog-yile.github.io/post/about/</id>
-        <link href="https://blog-yile.github.io/post/about/">
-        </link>
-        <updated>2023-02-26T02:13:18.000Z</updated>
-        <content type="html"><![CDATA[<p>你好！访问者！欢迎来到我的站点！<br>
-我是一个学生，平时喜欢捣鼓信息学的东西<br>
-这是我的博客，之后欢迎来玩！</p>
-<p>我的邮箱：749199580@qq.com<br>
-反馈邮箱：Mayile163Mail@163.com</p>
-<p>拜拜(o^^o)😁</p>
 ]]></content>
     </entry>
 </feed>
