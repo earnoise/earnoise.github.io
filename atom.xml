@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog-yile.github.io</id>
     <title>Gridea</title>
-    <updated>2023-02-26T02:16:18.145Z</updated>
+    <updated>2023-02-26T02:23:07.909Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog-yile.github.io"/>
     <link rel="self" href="https://blog-yile.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2023, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[关于……]]></title>
-        <id>https://blog-yile.github.io/post/guan-yu/</id>
-        <link href="https://blog-yile.github.io/post/guan-yu/">
+        <id>https://blog-yile.github.io/post/about/</id>
+        <link href="https://blog-yile.github.io/post/about/">
         </link>
         <updated>2023-02-26T02:13:18.000Z</updated>
         <content type="html"><![CDATA[<p>你好！访问者！欢迎来到我的站点！<br>
