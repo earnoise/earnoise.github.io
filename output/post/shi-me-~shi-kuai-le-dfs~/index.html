@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>什么～是快乐dfs～ | Yile&#39;sBLog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://earnoise.github.io/favicon.ico?v=1677828233514">
+<link rel="stylesheet" href="https://earnoise.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="相信各位在洛谷刷题的时候，肯定会见到一个东西：
+void dfs(){
+    // 懒得写(￣∇￣)
+}
+
+那这到底是个什么寄吧东西呢？
+来，先看百度：
+
+深度优先搜索是一种在开发爬虫早期使用较多的方法。它的目的是要达到被搜索结构的叶结点..." />
+    <meta name="keywords" content="c++" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://earnoise.github.io">
+        <img src="https://earnoise.github.io/images/avatar.png?v=1677828233514" class="site-logo">
+        <h1 class="site-title">Yile&#39;sBLog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一乐的博客
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://earnoise.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">什么～是快乐dfs～</h2>
+            <div class="post-date">2023-02-26 Sunday</div>
+            
+            <div class="post-content" v-pre>
+              <p>相信各位在洛谷刷题的时候，肯定会见到一个东西：</p>
+<pre><code class="language-cpp">void dfs(){
+    // 懒得写(￣∇￣)
+}
+</code></pre>
+<p>那这到底是个什么寄吧东西呢？<br>
+来，先看百度：</p>
+<blockquote>
+<p>深度优先搜索是一种在开发爬虫早期使用较多的方法。它的目的是要达到被搜索结构的叶结点(即那些不包含任何超链的HTML文件) 。在一个HTML文件中，当一个超链被选择后，被链接的HTML文件将执行深度优先搜索，即在搜索其余的超链结果之前必须先完整地搜索单独的一条链。深度优先搜索沿着HTML文件上的超链走到不能再深入为止，然后返回到某一个HTML文件，再继续选择该HTML文件中的其他超链。当不再有其他超链可选择时，说明搜索已经结束。</p>
+</blockquote>
+<p>人话：</p>
+<blockquote>
+<h1>递推</h1>
+</blockquote>
+<p>辣么，我们拿道题来看看：<br>
+<a href="https://www.luogu.com.cn/problem/P1644">洛谷P1644</a><br>
+先上完整AC代码：</p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int m,n,t;
+void dfs(int a,int b){
+    if (a&lt;0 || a&gt;n || b&gt;m) return;
+    if (a==n &amp;&amp; b==m){
+        t++;
+    }else{
+        dfs(a+1,b+2);
+        dfs(a+2,b+1);
+        dfs(a-2,b+1);
+        dfs(a-1,b+2);
+    }
+}
+int main(){
+    cin&gt;&gt;n&gt;&gt;m;
+    dfs(0,0);
+    cout&lt;&lt;t;
+    return 0;
+}
+</code></pre>
+<p>AC图片：<br>
+<img src="https://earnoise.github.io/post-images/1677378679185.png" alt="" loading="lazy"></p>
+<p>来，逐条分析:</p>
+<pre><code class="language-cpp">void dfs(int a,int b){ // 上文讲到的Dfs
+    if (a&lt;0 || a&gt;n || b&gt;m) return; // 如果超出界限，或者必定无法到达(n, m)(超过)返回主程序
+    if (a==n &amp;&amp; b==m){ // 到达(n, m)则计数+=1
+        t++;
+    }else{ // 枚举
+        dfs(a+1,b+2);
+        dfs(a+2,b+1);
+        dfs(a-2,b+1);
+        dfs(a-1,b+2);
+    }
+}
+</code></pre>
+<p>想必int main()不用说了吧？<br>
+如果康不懂，建议重读呢亲亲。</p>
+<p>byebye，摸鱼去啦。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://earnoise.github.io/tag/WabbyWabbo/" class="tag">
+                    c++
+                  </a>
+                
+              </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '0ff19f648243c1f743ae',
+        clientSecret: 'e0ac53659615ece0f733b3a941e6e804d59a0917',
+        repo: 'blog-yile.github.io',
+        owner: 'earnoise',
+        admin: ['earnoise'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

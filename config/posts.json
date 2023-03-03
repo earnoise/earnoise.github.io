@@ -1,0 +1,102 @@
+{
+  "posts": [
+    {
+      "content": "数学方法\nO(1)时间复杂度\n等比数列求和公式:\n$$S_n=(a_1(1-q^n))/(1-q)(q{=}\\mathllap{/\\,}1)$$\n每次游的距离为上一次的0.98倍，构成一个公比为0.98的等比数列\n现要使其前ans项大于等于一个值\n只要代入公式并向上取整即可\n下附超短代码\n\n源代码\n```cpp\n#include<bits/stdc++.h>\nusing namespace std;\ndouble x;\nint main()\n{\n    cin>>x;\n    cout<<ceil(log(1-x/100)/log(0.98));\n    return 0;\n}\n```\n",
+      "data": {
+        "title": "P1423 小玉在游泳 题解",
+        "date": "2023-03-03 15:12:47",
+        "tags": [],
+        "published": true,
+        "hideInList": false,
+        "feature": null,
+        "isTop": false
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "",
+      "fileName": "p1423-xiao-yu-zai-you-yong-ti-jie"
+    },
+    {
+      "content": "\n先上代码：\n```cpp\nconst int N=1e5+10;\nint vis[N];    //0表示素数，1表示非素数\nint prime[N];    //只在这个函数有作用\nvoid Euler_prime()  //欧拉筛法\n{\n    for(int i=2;i<=N;i++)\n    {\n        if(!vis[i]) prime[x++]=i;\n        for(int j=0;j<x;j++)\n        {\n            if(i*prime[j]>N) break;\n            vis[i*prime[j]]=1;\n            if(i%prime[j]==0) break;\n        }\n    }\n}\n```\n思路：\n为了实现让合数分解为——最小质因数 * 剩下的形式，我们将内层循环换为从最小的素数遍历到最大的素数，并且新增一条break语句，使得每次都以prime[j] * i的方式筛掉合数，如此就可以使得prime[j]为该合数的最小质因数。证明如下，改内层循环：prime是从最小遍历到最大的，且i使外层循环，总是大于prime的数字，所以prime[j] < i。加break语句：如果i =k * prime[j]，那么i * prime[j + 1] = prime[j] * k * prime[j + 1]显然此时prime[j + 1]不是该合数i * prime[j + 1]中的最小质因数，那么就说明该合数已经(之后)会被prime[j] 或者k中的最小质因数筛掉。即避免了重复筛选。\n\n摆烂吧～",
+      "data": {
+        "title": "欧拉筛(欧拉：为什么让我筛🤔",
+        "date": "2023-02-27 10:00:00",
+        "tags": [
+          "c++"
+        ],
+        "published": true,
+        "hideInList": false,
+        "feature": null,
+        "isTop": false
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "",
+      "fileName": "ou-la-shai-ou-la-wei-shi-me-rang-wo-shai"
+    },
+    {
+      "content": "相信各位在洛谷刷题的时候，肯定会见到一个东西：\n```cpp\nvoid dfs(){\n    // 懒得写(￣∇￣)\n}\n```\n那这到底是个什么寄吧东西呢？\n来，先看百度：\n>深度优先搜索是一种在开发爬虫早期使用较多的方法。它的目的是要达到被搜索结构的叶结点(即那些不包含任何超链的HTML文件) 。在一个HTML文件中，当一个超链被选择后，被链接的HTML文件将执行深度优先搜索，即在搜索其余的超链结果之前必须先完整地搜索单独的一条链。深度优先搜索沿着HTML文件上的超链走到不能再深入为止，然后返回到某一个HTML文件，再继续选择该HTML文件中的其他超链。当不再有其他超链可选择时，说明搜索已经结束。\n\n人话：\n><h1>递推</h1>\n\n辣么，我们拿道题来看看：\n[洛谷P1644](https://www.luogu.com.cn/problem/P1644)\n先上完整AC代码：\n```cpp\n#include<bits/stdc++.h>\nusing namespace std;\nint m,n,t;\nvoid dfs(int a,int b){\n    if (a<0 || a>n || b>m) return;\n    if (a==n && b==m){\n        t++;\n    }else{\n        dfs(a+1,b+2);\n        dfs(a+2,b+1);\n        dfs(a-2,b+1);\n        dfs(a-1,b+2);\n    }\n}\nint main(){\n    cin>>n>>m;\n    dfs(0,0);\n    cout<<t;\n    return 0;\n}\n```\nAC图片：\n![](https://blog-yile.github.io/post-images/1677378679185.png)\n\n来，逐条分析:\n```cpp\nvoid dfs(int a,int b){ // 上文讲到的Dfs\n    if (a<0 || a>n || b>m) return; // 如果超出界限，或者必定无法到达(n, m)(超过)返回主程序\n    if (a==n && b==m){ // 到达(n, m)则计数+=1\n        t++;\n    }else{ // 枚举\n        dfs(a+1,b+2);\n        dfs(a+2,b+1);\n        dfs(a-2,b+1);\n        dfs(a-1,b+2);\n    }\n}\n```\n想必int main()不用说了吧？\n如果康不懂，建议重读呢亲亲。\n\nbyebye，摸鱼去啦。",
+      "data": {
+        "title": "什么～是快乐dfs～",
+        "date": "2023-02-26 10:23:51",
+        "tags": [
+          "c++"
+        ],
+        "published": true,
+        "hideInList": false,
+        "feature": null,
+        "isTop": false
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "",
+      "fileName": "shi-me-~shi-kuai-le-dfs~"
+    },
+    {
+      "content": "\n你好！访问者！欢迎来到我的站点！\n我是一个学生，平时喜欢捣鼓信息学的东西\n这是我的博客，之后欢迎来玩！\n\n我的邮箱：749199580@qq.com\n反馈邮箱：Mayile163Mail@163.com\n\n拜拜(o^^o)😁",
+      "data": {
+        "title": "关于……",
+        "date": "2023-02-26 10:13:18",
+        "tags": [],
+        "published": true,
+        "hideInList": true,
+        "feature": null,
+        "isTop": false
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "",
+      "fileName": "about"
+    }
+  ],
+  "tags": [
+    {
+      "index": -1,
+      "name": "c++",
+      "slug": "WabbyWabbo",
+      "used": true
+    }
+  ],
+  "menus": [
+    {
+      "link": "/",
+      "name": "首页",
+      "openType": "Internal"
+    },
+    {
+      "link": "/archives",
+      "name": "归档",
+      "openType": "Internal"
+    },
+    {
+      "link": "/tags",
+      "name": "标签",
+      "openType": "Internal"
+    },
+    {
+      "link": "/post/about",
+      "name": "关于",
+      "openType": "Internal"
+    }
+  ]
+}

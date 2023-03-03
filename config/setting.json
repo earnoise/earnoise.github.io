@@ -1,0 +1,29 @@
+{
+  "config": {
+    "branch": "master",
+    "cname": "earnoise.github.io",
+    "domain": "http://earnoise.github.io",
+    "email": "Mayile163Mail@163.com",
+    "enabledProxy": "direct",
+    "platform": "github",
+    "privateKey": "",
+    "repository": "earnoise.github.io",
+    "token": "6d376e0dc2ecc6b83f438e02e138f7798ccaf295",
+    "username": "earnoise"
+  },
+  "comment": {
+    "commentPlatform": "gitalk",
+    "disqusSetting": {
+      "api": "",
+      "apikey": "",
+      "shortname": ""
+    },
+    "gitalkSetting": {
+      "clientId": "0ff19f648243c1f743ae",
+      "clientSecret": "e0ac53659615ece0f733b3a941e6e804d59a0917",
+      "owner": "earnoise",
+      "repository": "blog-yile.github.io"
+    },
+    "showComment": true
+  }
+}
