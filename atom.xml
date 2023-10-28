@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mayile1022的博客</title>
+  <icon>http://example.com/icon.png</icon>
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-10-28T12:34:12.570Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Mayile1022</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023/10/18 19:38</title>
+    <link href="http://example.com/2023/10/28/2023-10-18-19-38/"/>
+    <id>http://example.com/2023/10/28/2023-10-18-19-38/</id>
+    <published>2023-10-28T11:38:44.000Z</published>
+    <updated>2023-10-28T12:34:12.570Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;先说感受：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mstyle</summary>
+        
+      
+    
+    
+    
+    <category term="OI" scheme="http://example.com/categories/OI/"/>
+    
+    
+    <category term="月赛" scheme="http://example.com/tags/%E6%9C%88%E8%B5%9B/"/>
+    
+    <category term="随笔" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="游记" scheme="http://example.com/tags/%E6%B8%B8%E8%AE%B0/"/>
+    
+    <category term="OI" scheme="http://example.com/tags/OI/"/>
+    
+  </entry>
+  
+</feed>
