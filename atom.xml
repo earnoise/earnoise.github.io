@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-29T00:52:46.344Z</updated>
+  <updated>2023-10-29T04:09:27.407Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小米14 || 红米K60？(横向对比！)</title>
+    <link href="http://example.com/2023/10/29/%E5%B0%8F%E7%B1%B314-%E7%BA%A2%E7%B1%B3K60%EF%BC%9F/"/>
+    <id>http://example.com/2023/10/29/%E5%B0%8F%E7%B1%B314-%E7%BA%A2%E7%B1%B3K60%EF%BC%9F/</id>
+    <published>2023-10-29T02:48:08.000Z</published>
+    <updated>2023-10-29T04:09:27.407Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;众所周知，前几天 小米14系列 发布了，K60宇宙 受到极大威胁，今天横向对比一波，各位米粉仔细斟酌。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="数码" scheme="http://example.com/categories/%E6%95%B0%E7%A0%81/"/>
+    
+    <category term="手机" scheme="http://example.com/categories/%E6%95%B0%E7%A0%81/%E6%89%8B%E6%9C%BA/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AI绘画？腾讯智影！(附御三家真实样子)</title>
+    <link href="http://example.com/2023/10/29/AI%E7%BB%98%E7%94%BB%EF%BC%9F%E8%85%BE%E8%AE%AF%E6%99%BA%E5%BD%B1%EF%BC%81/"/>
+    <id>http://example.com/2023/10/29/AI%E7%BB%98%E7%94%BB%EF%BC%9F%E8%85%BE%E8%AE%AF%E6%99%BA%E5%BD%B1%EF%BC%81/</id>
+    <published>2023-10-29T02:23:15.000Z</published>
+    <updated>2023-10-29T02:47:28.741Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;因为有人想看小F、小Y、小C真正的样子，但是他们有没有原型，所以只能绘画了。&lt;/p&gt;
+&lt;p&gt;但是，myl：&lt;/p&gt;
+&lt;p class=&#39;katex-block&#39;&gt;&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mstyle mathsize=&quot;2.074em&quot;&gt;&lt;mrow&gt;&lt;mtext&gt;没有钱&lt;/mtext&gt;&lt;mo stretchy=&quot;false&quot;&gt;!&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;&#92;huge{没有钱!}
+&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.4402685599999998em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord sizing reset-size6 size10&quot;&gt;&lt;span class=&quot;mord cjk_fallback&quot;&gt;没&lt;/span&gt;&lt;span class=&quot;mord cjk_fallback&quot;&gt;有&lt;/span&gt;&lt;span class=&quot;mord cjk_fallback&quot;&gt;钱&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;!&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;所以只能用AI绘画了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科技" scheme="http://example.com/categories/%E7%A7%91%E6%8A%80/"/>
+    
+    <category term="AI" scheme="http://example.com/categories/%E7%A7%91%E6%8A%80/AI/"/>
+    
+    
+    <category term="AI" scheme="http://example.com/tags/AI/"/>
+    
+    <category term="科技" scheme="http://example.com/tags/%E7%A7%91%E6%8A%80/"/>
+    
+    <category term="绘画" scheme="http://example.com/tags/%E7%BB%98%E7%94%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>FCY三人故事在该hexo博客连载决定！</title>
@@ -38,7 +86,7 @@
     <link href="http://example.com/2023/10/29/%E6%A8%A1%E6%8B%9F%E8%B5%9BT1-%E8%B5%9B%E5%90%8E%E9%A2%98%E8%A7%A3/"/>
     <id>http://example.com/2023/10/29/%E6%A8%A1%E6%8B%9F%E8%B5%9BT1-%E8%B5%9B%E5%90%8E%E9%A2%98%E8%A7%A3/</id>
     <published>2023-10-28T23:50:06.000Z</published>
-    <updated>2023-10-28T23:59:32.332Z</updated>
+    <updated>2023-10-29T02:48:11.834Z</updated>
     
     
     <summary type="html">&lt;p&gt;昨天模拟赛的T1代码有问题，更新题解。&lt;/p&gt;</summary>
