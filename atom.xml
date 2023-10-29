@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-29T04:09:27.407Z</updated>
+  <updated>2023-10-29T06:20:38.512Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2023/10/29/%E5%B0%8F%E7%B1%B314-%E7%BA%A2%E7%B1%B3K60%EF%BC%9F/"/>
     <id>http://example.com/2023/10/29/%E5%B0%8F%E7%B1%B314-%E7%BA%A2%E7%B1%B3K60%EF%BC%9F/</id>
     <published>2023-10-29T02:48:08.000Z</published>
-    <updated>2023-10-29T04:09:27.407Z</updated>
+    <updated>2023-10-29T06:20:38.512Z</updated>
     
     
     <summary type="html">&lt;p&gt;众所周知，前几天 小米14系列 发布了，K60宇宙 受到极大威胁，今天横向对比一波，各位米粉仔细斟酌。&lt;/p&gt;</summary>
@@ -32,6 +32,12 @@
     
     <category term="手机" scheme="http://example.com/categories/%E6%95%B0%E7%A0%81/%E6%89%8B%E6%9C%BA/"/>
     
+    
+    <category term="手机" scheme="http://example.com/tags/%E6%89%8B%E6%9C%BA/"/>
+    
+    <category term="小米" scheme="http://example.com/tags/%E5%B0%8F%E7%B1%B3/"/>
+    
+    <category term="数码" scheme="http://example.com/tags/%E6%95%B0%E7%A0%81/"/>
     
   </entry>
   
