@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-28T23:59:32.332Z</updated>
+  <updated>2023-10-29T00:52:46.344Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FCY三人故事在该hexo博客连载决定！</title>
+    <link href="http://example.com/2023/10/29/FCY%E4%B8%89%E4%BA%BA%E6%95%85%E4%BA%8B%E5%9C%A8%E8%AF%A5hexo%E5%8D%9A%E5%AE%A2%E8%BF%9E%E8%BD%BD%E5%86%B3%E5%AE%9A%EF%BC%81/"/>
+    <id>http://example.com/2023/10/29/FCY%E4%B8%89%E4%BA%BA%E6%95%85%E4%BA%8B%E5%9C%A8%E8%AF%A5hexo%E5%8D%9A%E5%AE%A2%E8%BF%9E%E8%BD%BD%E5%86%B3%E5%AE%9A%EF%BC%81/</id>
+    <published>2023-10-29T00:50:17.000Z</published>
+    <updated>2023-10-29T00:52:46.344Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;恭喜！之后FCY三人故事将在本博客 &lt;em&gt;FCY&lt;/em&gt; 分类连载！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="FCY" scheme="http://example.com/categories/FCY/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>模拟赛T1 赛后题解</title>
