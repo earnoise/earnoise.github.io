@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-28T12:34:12.570Z</updated>
+  <updated>2023-10-28T23:59:32.332Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,21 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2023/10/18 19:38</title>
+    <title>模拟赛T1 赛后题解</title>
+    <link href="http://example.com/2023/10/29/%E6%A8%A1%E6%8B%9F%E8%B5%9BT1-%E8%B5%9B%E5%90%8E%E9%A2%98%E8%A7%A3/"/>
+    <id>http://example.com/2023/10/29/%E6%A8%A1%E6%8B%9F%E8%B5%9BT1-%E8%B5%9B%E5%90%8E%E9%A2%98%E8%A7%A3/</id>
+    <published>2023-10-28T23:50:06.000Z</published>
+    <updated>2023-10-28T23:59:32.332Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;昨天模拟赛的T1代码有问题，更新题解。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="OI" scheme="http://example.com/categories/OI/"/>
+    
+    <category term="题解" scheme="http://example.com/categories/OI/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="题解" scheme="http://example.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新东方十月月赛 赛时游记</title>
     <link href="http://example.com/2023/10/28/2023-10-18-19-38/"/>
     <id>http://example.com/2023/10/28/2023-10-18-19-38/</id>
     <published>2023-10-28T11:38:44.000Z</published>
-    <updated>2023-10-28T12:34:12.570Z</updated>
+    <updated>2023-10-29T00:00:33.604Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;先说感受：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mstyle</summary>
-        
-      
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mstyle mathcolor=&quot;green&quot;&gt;&lt;mstyle mathsize=&quot;2.074em&quot;&gt;&lt;mtext&gt;艹！&lt;/mtext&gt;&lt;/mstyle&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;&#92;textcolor{green}{&#92;huge{艹！}}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.41722642em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord sizing reset-size6 size10&quot; style=&quot;color:green;&quot;&gt;&lt;span class=&quot;mord cjk_fallback&quot; style=&quot;color:green;&quot;&gt;艹&lt;/span&gt;&lt;span class=&quot;mord cjk_fallback&quot; style=&quot;color:green;&quot;&gt;！&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;今天打模拟赛吧，新东方十月月赛，可以当成是赛时游记。&lt;/p&gt;</summary>
     
     
     
